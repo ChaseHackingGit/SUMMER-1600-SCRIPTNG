@@ -7,9 +7,10 @@ public class Animal : MonoBehaviour {
 
 	public float Speed;
 	public int PowerLevel;
+	public string PlayerName;
 	// Use this for initialization
 	void Start () {
-		
+
 	}
 	
 	// Update is called once per frame
