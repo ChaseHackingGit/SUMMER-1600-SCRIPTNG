@@ -14,6 +14,6 @@ public class Animal : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.Rotate (0,Speed,0);
+		transform.Rotate (Speed,Speed,Speed);
 	}
 }
