@@ -9,11 +9,11 @@ public class Animal : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		transform.Rotate (0,45,0);
+		
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		//transform.Rotate (0, 1, 0);
+		transform.Rotate (0,Speed,0);
 	}
 }
