@@ -6,7 +6,7 @@ public class Animal : MonoBehaviour {
 
 
 	public float Speed;
-
+	public int PowerLevel;
 	// Use this for initialization
 	void Start () {
 		
