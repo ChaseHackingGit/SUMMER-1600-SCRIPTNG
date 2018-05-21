@@ -2,7 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Mamal : MonoBehaviour {
+public class Mamal : Animal {
+
+
+
+	public float Breathe;
+	public float HairCount;
 
 	// Use this for initialization
 	void Start () {
