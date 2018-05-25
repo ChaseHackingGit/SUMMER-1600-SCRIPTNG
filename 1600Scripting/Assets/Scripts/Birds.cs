@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu()]
-public class Birds : Animal {
+public class Birds : ScriptableObject {
 
 
 	public int FeatherCount = 1000;
