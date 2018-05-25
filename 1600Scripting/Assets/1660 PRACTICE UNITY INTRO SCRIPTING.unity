@@ -203,7 +203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b85532ca0a34054090d1e90d4e4f82f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AnimalInfo: {fileID: 0}
+  AnimalInfo: {fileID: 11400000, guid: a6886851eeafbe9498e0201db274e8d6, type: 2}
 --- !u!1 &504442985
 GameObject:
   m_ObjectHideFlags: 0

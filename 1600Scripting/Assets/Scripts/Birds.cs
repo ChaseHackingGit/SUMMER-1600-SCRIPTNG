@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu()]
-public class Birds : ScriptableObject {
+public class Birds : Animal {
 
 
 	public int FeatherCount = 1000;
 	public Color Feather = Color.blue;
 	public int FlightSpeedCount = 10;
-
 
 }
