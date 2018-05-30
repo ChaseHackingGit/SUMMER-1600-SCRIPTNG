@@ -12,10 +12,8 @@ public class AnimalBehavior : MonoBehaviour {
 	void Start () {
 		print (AnimalInfo.Health);
 	}
-
-
-	// Update is called once per frame
-	void Update () {
-		
+	void OnTriggerEnter ()
+	{
 	}
+
 }
