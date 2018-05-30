@@ -6,11 +6,4 @@ public class AnimalBehavior : MonoBehaviour {
 
 	public Animal AnimalInfo;
 
-
-	void OnTriggerEnter ()
-	{
-		print ("Hit");
-	
-		AnimalInfo.UpdateHealth ();
 	}
-}

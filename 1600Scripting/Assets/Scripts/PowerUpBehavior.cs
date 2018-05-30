@@ -8,7 +8,7 @@ public class PowerUpBehavior : MonoBehaviour
 
 	void OnTriggerEnter()
 	{
+		PowerUp.RunPowerUp ();
 		gameObject.SetActive (false);
 	}
-
 }
