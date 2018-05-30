@@ -5,7 +5,6 @@ using UnityEngine;
 public class AnimalBehavior : MonoBehaviour {
 
 
-
 	public Animal AnimalInfo;
 
 	// Use this for initialization
@@ -14,6 +13,7 @@ public class AnimalBehavior : MonoBehaviour {
 	}
 	void OnTriggerEnter ()
 	{
+		print ("Hit");
 	}
 
 }
