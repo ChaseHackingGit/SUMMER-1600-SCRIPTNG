@@ -6,6 +6,9 @@ public class MovePlayer : MonoBehaviour {
 
 	private CharacterController controller;
 
+	private Vector3 newPosition;
+	public float Speed = 10.0f;
+
 	// Use this for initialization
 	void Start () {
 		controller = GetComponent<CharacterController> ();
@@ -13,6 +16,7 @@ public class MovePlayer : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		newPosition.x = Speed * Input.GetAxis ("Horizontal");
+		controller.Move (newPosition * Time.deltaTime);
 	}
 }
