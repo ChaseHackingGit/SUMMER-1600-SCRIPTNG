@@ -2,7 +2,7 @@
 
 [CreateAssetMenu]
 public class IfStatements : ScriptableObject {
-{
+
 		
 		public int a;
 		public int b;
