@@ -23,7 +23,7 @@ public class MovePlayer : MonoBehaviour {
 	{
 
 
-		if (Input.GetKeyDown (KeyCode.Space)) 
+		if (Input.GetKeyDown (KeyCode.Space) && controller.isGrounded) 
 		{
 			newPosition.y = JumpSpeed;
 		}

@@ -10,9 +10,13 @@ public class IfStatements : ScriptableObject {
 
 		private void OnEnable()
 		{
-			if (a + b != c)
+			if (a + b <= c)
 			{
 				Debug.Log("True");
+			}
+			else
+			{
+				Debug.Log("False");
 			}
 		}
 	}
