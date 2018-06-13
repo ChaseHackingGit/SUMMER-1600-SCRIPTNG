@@ -5,12 +5,12 @@ using UnityEngine.UI;
 
 public class HealthBehavior : MonoBehaviour {
 
-	public FloatData HealthLevel = 1.0f;
+	public FloatData HealthLevel;
 	public Image HealthImage;
 
 	// Use this for initialization
 	void Start () {
-
+		HealthLevel.Value = 1.0f;
 		HealthImage = GetComponent<Image> ();
 	}
 	
