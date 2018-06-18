@@ -289,7 +289,7 @@ GameObject:
   - component: {fileID: 779762770}
   - component: {fileID: 779762769}
   m_Layer: 0
-  m_Name: Cylinder
+  m_Name: PLAYER
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -306,6 +306,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2597d0d8132c0e54ab1a8fb0999a35f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponObjects:
+  - {fileID: 11400000, guid: 45c457713dc0dc948b42022dbaa71701, type: 2}
+  - {fileID: 11400000, guid: 33379c56f6edbe14199c878a70e216eb, type: 2}
+  - {fileID: 11400000, guid: f7b78021332f9094d8f62e37d6452dd7, type: 2}
+  - {fileID: 11400000, guid: 898abc61cd2e2ae429c50ff7d888956b, type: 2}
+  - {fileID: 11400000, guid: 6a2a5aa778ee88044acf23fca06c770b, type: 2}
+  - {fileID: 11400000, guid: 8097ddf9e837f46449adb2d0aa1421f3, type: 2}
   CurrentWeapon: 5
 --- !u!23 &779762770
 MeshRenderer:

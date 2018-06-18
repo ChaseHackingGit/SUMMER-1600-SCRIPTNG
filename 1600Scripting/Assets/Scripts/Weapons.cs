@@ -15,6 +15,8 @@ public class Weapons : MonoBehaviour {
 		EnchantedChair,
 	}
 
+	public WeaponObject[] WeaponObjects;
+
 	public WeaponType CurrentWeapon;
 
 	void Update()
@@ -22,27 +24,33 @@ public class Weapons : MonoBehaviour {
 		switch (CurrentWeapon)
 		{
 		case WeaponType.EnchantedChair:
-			Debug.Log (CurrentWeapon);
+			Debug.Log (WeaponObjects [0].name);
+			Debug.Log (WeaponObjects [0].DoDamage ());
 			break;
 
 		case WeaponType.Axe:
-			Debug.Log (CurrentWeapon);
+			Debug.Log (WeaponObjects [1].name);
+			Debug.Log (WeaponObjects [1].DoDamage ());
 			break;
 
 		case WeaponType.Club:
-			Debug.Log (CurrentWeapon);
+			Debug.Log (WeaponObjects [2].name);
+			Debug.Log (WeaponObjects [2].DoDamage ());
 			break;
 
 		case WeaponType.Scimitar:
-			Debug.Log (CurrentWeapon);
+			Debug.Log (WeaponObjects [3].name);
+			Debug.Log (WeaponObjects [3].DoDamage ());
 			break;
 
 		case WeaponType.Spear:
-			Debug.Log (CurrentWeapon);
+			Debug.Log (WeaponObjects [4].name);
+			Debug.Log (WeaponObjects [4].DoDamage ());
 			break;
 
 		case WeaponType.Sword:
-			Debug.Log (CurrentWeapon);
+			Debug.Log (WeaponObjects [5].name);
+			Debug.Log (WeaponObjects [5].DoDamage ());
 			break;
 		}
     }
