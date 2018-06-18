@@ -9,7 +9,6 @@ public class DoAddition : ScriptableObject
 
 	private void OnEnable()
 	{
-		c = RuntimePlatform (20, 2);
 	}
 
 	public int Run(int a, int b)
