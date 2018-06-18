@@ -5,9 +5,16 @@ using UnityEngine;
 public class Weapons : MonoBehaviour {
 
 
-	enum WeaponType
+	public enum WeaponType
 	{
-
+		Axe,
+		Club,
+		Sword,
+		Spear,
+		Scimitar,
+		EnchantedChair,
 	}
+
+	public WeaponType CurrentWeapon;
 
 }
