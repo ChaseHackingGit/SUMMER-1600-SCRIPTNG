@@ -24,6 +24,26 @@ public class Weapons : MonoBehaviour {
 		case WeaponType.EnchantedChair:
 			Debug.Log (CurrentWeapon);
 			break;
+
+		case WeaponType.Axe:
+			Debug.Log (CurrentWeapon);
+			break;
+
+		case WeaponType.Club:
+			Debug.Log (CurrentWeapon);
+			break;
+
+		case WeaponType.Scimitar:
+			Debug.Log (CurrentWeapon);
+			break;
+
+		case WeaponType.Spear:
+			Debug.Log (CurrentWeapon);
+			break;
+
+		case WeaponType.Sword:
+			Debug.Log (CurrentWeapon);
+			break;
 		}
     }
 }
