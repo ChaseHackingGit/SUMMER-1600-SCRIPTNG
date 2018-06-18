@@ -17,4 +17,13 @@ public class Weapons : MonoBehaviour {
 
 	public WeaponType CurrentWeapon;
 
+	void Update()
+	{
+		switch (CurrentWeapon)
+		{
+		case WeaponType.EnchantedChair:
+			Debug.Log (CurrentWeapon);
+			break;
+		}
+    }
 }
