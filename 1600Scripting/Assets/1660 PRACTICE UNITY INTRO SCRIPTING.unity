@@ -749,7 +749,7 @@ GameObject:
   - component: {fileID: 1137247444}
   - component: {fileID: 1137247446}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Health Bar Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -770,7 +770,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -344.8, y: -98.8}
+  m_AnchoredPosition: {x: -344.87, y: -98.8}
   m_SizeDelta: {x: 448.91, y: 118.92}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1137247444
@@ -817,8 +817,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f443571b81a2744b85466b4906a8cfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HealthLevel: 1
-  HealthImage: {fileID: 0}
+  HealthLevel: {fileID: 11400000, guid: 2c52452105c56204a80a5f40d8633a75, type: 2}
+  HealthImage: {fileID: 1137247444}
 --- !u!1 &1159739862
 GameObject:
   m_ObjectHideFlags: 0

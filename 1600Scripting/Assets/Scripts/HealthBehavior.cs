@@ -11,7 +11,6 @@ public class HealthBehavior : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		HealthLevel.Value = 1.0f;
-		HealthImage = GetComponent<Image> ();
 	}
 	
 	// Update is called once per frame
