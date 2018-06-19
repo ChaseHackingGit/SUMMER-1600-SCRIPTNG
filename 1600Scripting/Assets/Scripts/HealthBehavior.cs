@@ -8,14 +8,23 @@ public class HealthBehavior : MonoBehaviour {
 	public FloatData HealthLevel;
 	public Image HealthImage;
 
+	float GetValue () {
+		return HealthLevel.Value;
+	}
+	void SetValue (float f) {
+		HealthLevel.Value = f;
+	}
+
+
+
 	// Use this for initialization
 	void Start () {
-		HealthLevel.Value = 1.0f;
+		SetValue (1.0f);
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		
-		HealthImage.fillAmount = HealthLevel.Value;
+		HealthImage.fillAmount = GetValue ();
 	}
 }
