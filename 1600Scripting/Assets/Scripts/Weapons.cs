@@ -52,6 +52,26 @@ public class Weapons : MonoBehaviour {
 			Debug.Log (WeaponObjects [5].name);
 			Debug.Log (WeaponObjects [5].DoDamage ());
 			break;
+
+		case WeaponType.Axe:
+			Debug.Log (CurrentWeapon);
+			break;
+
+		case WeaponType.Club:
+			Debug.Log (CurrentWeapon);
+			break;
+
+		case WeaponType.Scimitar:
+			Debug.Log (CurrentWeapon);
+			break;
+
+		case WeaponType.Spear:
+			Debug.Log (CurrentWeapon);
+			break;
+
+		case WeaponType.Sword:
+			Debug.Log (CurrentWeapon);
+			break;
 		}
     }
 }
