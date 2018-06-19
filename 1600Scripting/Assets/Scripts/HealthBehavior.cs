@@ -9,10 +9,17 @@ public class HealthBehavior : MonoBehaviour {
 	public Image HealthImage;
 
 	float GetValue () {
-		return HealthLevel.Value;
+		if (HealthLevel == null) {
+			Debug.Log ("use inspector to set Health Log");
+			return 0.0f;
+		} else 
+			return HealthLevel.Value;
 	}
 	void SetValue (float f) {
-		HealthLevel.Value = f;
+		if (HealthLevel == null)
+			Debug.Log ("use inspector to set Health Log");
+		else 
+			HealthLevel.Value = f;
 	}
 
 
