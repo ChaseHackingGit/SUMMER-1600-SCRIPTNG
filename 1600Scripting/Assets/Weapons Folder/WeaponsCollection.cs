@@ -13,7 +13,11 @@ public List<WeaponObject> Weapons;
 		foreach (var item in Weapons)
 		{
 			Debug.Log(item);
-		}
 
+			if (item.name == "Sword")
+			{
+				Debug.Log ("you got the groovy sword, nice one Sir GalaRAD!");
+			}
+		}
 	}
 }
