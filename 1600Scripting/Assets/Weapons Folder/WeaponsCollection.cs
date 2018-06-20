@@ -8,7 +8,12 @@ public List<WeaponObject> Weapons;
 
 	public void CollectWeapon (WeaponObject weapon)
 	{
-		Debug.Log (weapon);
 		Weapons.Add (weapon);
+
+		foreach (var item in Weapons)
+		{
+			Debug.Log(item);
+		}
+
 	}
 }
