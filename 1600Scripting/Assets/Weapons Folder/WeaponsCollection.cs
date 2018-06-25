@@ -8,7 +8,7 @@ public List<WeaponObject> Weapons;
 
 	public void CollectWeapon (WeaponObject weapon)
 	{
-		Weapons.Add (weapon);
+		Weapons.Add(weapon);
 
 		foreach (var item in Weapons)
 		{
