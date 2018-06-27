@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class FireAmmo : MonoBehaviour {
 
-	public GameObject Ammo;
+	public List<GameObject> Ammo;
 
 	private void Update()
 	{
 		if (Input.GetKeyDown (KeyCode.Space))
 		{
-			Instantiate (Ammo);
+
+
+
+			//Instantiate (Ammo);
 		}
 	}
 }
