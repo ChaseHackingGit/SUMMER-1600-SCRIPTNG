@@ -13,10 +13,10 @@ public class Ammo : MonoBehaviour {
 	{
 		Projectile = GetComponent<Rigidbody> ();
 		Projectile.AddForce (0,0,ProjectileSpeed.Value);
-		Invoke ("DestroyObject", 2);
+		Invoke ("Deactivate", 2);
 	}
 
-	private void DestroyObject()
+	private void Deactivate()
 	{
 		gameObject.SetActive (false);
 	}
