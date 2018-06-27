@@ -10,10 +10,11 @@ public class FireAmmo : MonoBehaviour {
 	{
 		if (Input.GetKeyDown (KeyCode.Space))
 		{
-
-
-
-			//Instantiate (Ammo);
+			for (int i = 0; i < Ammo.Count; i++)
+			{
+				Ammo [i].SetActive (true);
+			}
+		
 		}
 	}
 }

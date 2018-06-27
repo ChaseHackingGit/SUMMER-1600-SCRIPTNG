@@ -9,7 +9,7 @@ public class Ammo : MonoBehaviour {
 	public FloatData ProjectileSpeed;
 	public FloatData ProjectileUpgrade;
 
-	private void start()
+	private void OnEnable()
 	{
 		Projectile = GetComponent<Rigidbody> ();
 		Projectile.AddForce (0,0,ProjectileSpeed.Value);
@@ -18,7 +18,7 @@ public class Ammo : MonoBehaviour {
 
 	private void DestroyObject()
 	{
-		Destroy (gameObject);
+		gameObject.SetActive (false);
 	}
 
 	private void OnTriggerEnter(Collider other)
