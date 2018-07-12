@@ -13,12 +13,12 @@ public class Ammo : MonoBehaviour {
 	{
 		Projectile = GetComponent<Rigidbody> ();
 		Projectile.AddForce (0,0,ProjectileSpeed.Value);
-		Invoke ("Deactivate", 2);
+		Invoke ("DestroyObject", 2);
 	}
 
-	private void Deactivate()
+	private void DestroyObject()
 	{
-		gameObject.SetActive (false);
+		Destroy (gameObject);
 	}
 
 	private void OnTriggerEnter(Collider other)
