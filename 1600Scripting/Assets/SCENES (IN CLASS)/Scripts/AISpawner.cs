@@ -24,8 +24,12 @@ public class AISpawner : MonoBehaviour
 			newAI.GetComponent<AIMovement> ().Destination = Destination;
 			aiCount--;
 
+	
+
 			yield return new WaitForSeconds (CurrentLevel.Time);
 		}
+		CurrentLevel.CheckAiCount ();
+
 	}
 
 }
