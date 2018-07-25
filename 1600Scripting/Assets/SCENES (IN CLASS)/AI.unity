@@ -1508,9 +1508,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74b4e086e6069fa42b58d29f63dadac8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Starting: {fileID: 0}
-  Playing: {fileID: 0}
-  Ending: {fileID: 0}
+  Starting: {fileID: 11400000, guid: a3a19ea9f5806864e912c0829f6bc861, type: 2}
+  Playing: {fileID: 11400000, guid: 286eaedf8095e254dafb32375a255af3, type: 2}
+  Ending: {fileID: 11400000, guid: f7cefea85bc655744957b328ee36a960, type: 2}
   CurrentState: 0
 --- !u!4 &1960123689
 Transform:
