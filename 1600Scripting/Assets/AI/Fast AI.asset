@@ -11,5 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 470a42237f78b1c41bf671ea3af25eb0, type: 3}
   m_Name: Fast AI
   m_EditorClassIdentifier: 
-  Speed: 10
+  Speed: 15
   AngularSpeed: 360

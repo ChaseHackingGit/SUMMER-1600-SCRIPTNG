@@ -108,7 +108,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Agent: {fileID: 0}
   Destination: {fileID: 0}
-  Control: {fileID: 11400000, guid: 32af518c90c465e4dac07a4d89902bd9, type: 2}
+  Control: {fileID: 11400000, guid: 5504611c0cc57cb4589107c5e7c85212, type: 2}
 --- !u!195 &195748537225175412
 NavMeshAgent:
   m_ObjectHideFlags: 1
