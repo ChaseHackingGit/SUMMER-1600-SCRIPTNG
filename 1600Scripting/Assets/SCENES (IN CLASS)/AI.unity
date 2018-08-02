@@ -639,7 +639,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 20
   Gravity: 9.81
-  JumpSpeed: 50
+  JumpSpeed: 200
   CanRun: 1
 --- !u!143 &1981868694
 CharacterController:
