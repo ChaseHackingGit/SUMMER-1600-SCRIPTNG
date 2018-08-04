@@ -312,6 +312,24 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300004, guid: 7c10f1e6f6780ec4d819662bb4f3bddc, type: 3}
+--- !u!1 &510902244 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 7c10f1e6f6780ec4d819662bb4f3bddc, type: 3}
+  m_PrefabInternal: {fileID: 2123852520}
+--- !u!64 &510902248
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 510902244}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300002, guid: 7c10f1e6f6780ec4d819662bb4f3bddc, type: 3}
 --- !u!1 &728297263 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100014, guid: 7c10f1e6f6780ec4d819662bb4f3bddc, type: 3}
@@ -639,7 +657,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 20
   Gravity: 9.81
-  JumpSpeed: 200
+  JumpSpeed: 100
   CanRun: 1
 --- !u!143 &1981868694
 CharacterController:
