@@ -4,17 +4,13 @@ using UnityEngine;
 
 public class FireAmmo : MonoBehaviour {
 
-	public List<GameObject> Ammo;
+	public GameObject Ammo;
 
 	private void Update()
 	{
 		if (Input.GetKeyDown (KeyCode.V))
 		{
-			for (int i = 0; i < Ammo.Count; i++)
-			{
-				Ammo [i].SetActive (true);
-			}
-		
+			Instantiate (Ammo, transform.position, Quaternion.identity);
 		}
 	}
 }
