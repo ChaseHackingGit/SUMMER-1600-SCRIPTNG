@@ -48,4 +48,12 @@ public class MovePlayer : MonoBehaviour {
 
 		controller.Move (newPosition * Time.deltaTime);
 	}
+
+
+	private void OnTriggerEnter(Collider other)
+	{
+		if (other.gameObject.tag == "Enemy") {
+			Debug.Log ("GAME OVER");
+		}
+	}
 }

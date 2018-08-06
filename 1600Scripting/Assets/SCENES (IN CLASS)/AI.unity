@@ -1123,6 +1123,11 @@ Prefab:
       propertyPath: m_TagString
       value: Randal
       objectReference: {fileID: 0}
+    - target: {fileID: 136187106483300820, guid: 11cfd6da96a6f0d4eaf861f51b9f3c19,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11cfd6da96a6f0d4eaf861f51b9f3c19, type: 2}
   m_IsPrefabParent: 0

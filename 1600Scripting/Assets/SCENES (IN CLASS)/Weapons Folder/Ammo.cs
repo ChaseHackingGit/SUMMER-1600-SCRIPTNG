@@ -26,8 +26,9 @@ public class Ammo : MonoBehaviour {
 	{
 		if (other.gameObject.tag == "Enemy") {
 			Invoke ("DestroyObject", 0);
+			DestroyObject (other.gameObject);//if ammo makes contact with "enemy" (AI tag) Destroy Object (ammo) and Destroy Enemy (other.gameObject/AI)
 		}
-
+	
 		if (other.gameObject.tag == "Wall") {
 			Invoke ("DestroyObject", 0);
 		}
