@@ -8,7 +8,7 @@ public class FireAmmo : MonoBehaviour {
 
 	private void Update()
 	{
-		if (Input.GetKeyDown (KeyCode.Space))
+		if (Input.GetKeyDown (KeyCode.V))
 		{
 			for (int i = 0; i < Ammo.Count; i++)
 			{
