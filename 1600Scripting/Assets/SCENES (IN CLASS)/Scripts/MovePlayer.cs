@@ -27,10 +27,23 @@ public class MovePlayer : MonoBehaviour {
 		}
 
 		newPosition.y -= Gravity;
+		newPosition.x = 0.0f;
+		newPosition.z = 0.0f;
 
 		if (CanRun)
 		{
-			newPosition.x = Speed * Input.GetAxis ("Horizontal");
+			if (Input.GetKey (KeyCode.LeftArrow)) {
+				newPosition.x = -Speed;
+			}
+			if (Input.GetKey (KeyCode.RightArrow)) {
+				newPosition.x = Speed;
+			}
+			if (Input.GetKey (KeyCode.UpArrow)) {
+				newPosition.z = Speed;
+			}
+			if (Input.GetKey (KeyCode.DownArrow)) {
+				newPosition.z = -Speed;
+			}
 		}
 
 		controller.Move (newPosition * Time.deltaTime);
