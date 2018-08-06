@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MovePlayer : MonoBehaviour {
 
@@ -21,11 +22,14 @@ public class MovePlayer : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
-		if (Input.GetKeyDown (KeyCode.Space) && controller.isGrounded) 
-		{
+		if (Input.GetKeyDown (KeyCode.Space) && controller.isGrounded) {
 			newPosition.y = JumpSpeed;
 		}
-
+			
+		if (Input.GetKeyDown (KeyCode.R)) {
+			SceneManager.LoadScene (SceneManager.GetActiveScene ().name);
+		}
+			
 		newPosition.y -= Gravity;
 		newPosition.x = 0.0f;
 		newPosition.z = 0.0f;
