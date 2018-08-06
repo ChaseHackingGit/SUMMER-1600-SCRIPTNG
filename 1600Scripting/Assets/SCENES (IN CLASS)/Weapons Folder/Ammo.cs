@@ -13,6 +13,7 @@ public class Ammo : MonoBehaviour {
 	{
 		Projectile = GetComponent<Rigidbody> ();
 		Projectile.AddForce (0,0,ProjectileSpeed.Value);
+		Debug.Log ("check",ProjectileSpeed);
 		Invoke ("DestroyObject", 2);
 	}
 
@@ -23,7 +24,15 @@ public class Ammo : MonoBehaviour {
 
 	private void OnTriggerEnter(Collider other)
 	{
-		ProjectileSpeed = ProjectileUpgrade;
-		Projectile.AddForce (0,0,ProjectileSpeed.Value);
+		if (other.gameObject.tag == "Enemy") {
+			Invoke ("DestroyObject", 0);
+		}
+
+		if (other.gameObject.tag == "Wall") {
+			Invoke ("DestroyObject", 0);
+		}
+			//ProjectileSpeed = ProjectileUpgrade;
+			//Debug.Log ("check2", ProjectileSpeed);
+			//Projectile.AddForce (0, 0, ProjectileSpeed.Value);
 	}
 }

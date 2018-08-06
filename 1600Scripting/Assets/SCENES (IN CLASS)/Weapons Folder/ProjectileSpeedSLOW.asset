@@ -11,4 +11,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f8ecbe8db928eb43bd59fa848ea7d95, type: 3}
   m_Name: ProjectileSpeedSLOW
   m_EditorClassIdentifier: 
-  Value: 200
+  Value: 500
