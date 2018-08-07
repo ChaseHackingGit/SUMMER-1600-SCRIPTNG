@@ -9,6 +9,7 @@ TagManager:
   - Randal
   - Wall
   - DEATH SCREEN
+  - Coin
   layers:
   - Default
   - TransparentFX

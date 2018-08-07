@@ -262,9 +262,10 @@ GameObject:
   - component: {fileID: 299017124}
   - component: {fileID: 299017123}
   - component: {fileID: 299017122}
+  - component: {fileID: 299017126}
   m_Layer: 0
   m_Name: Required Collectible Pickup (3)
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -308,7 +309,7 @@ CapsuleCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 299017121}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 2
@@ -334,6 +335,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &299017126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 299017121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 632bea3e378e1d449898ddc1b4d51555, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &320209704
 GameObject:
   m_ObjectHideFlags: 0
@@ -416,6 +428,15 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 136111144641821860, guid: aeaa3c2ebb6c9c541a60dc83c2ca1a2f,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1888712775587104, guid: aeaa3c2ebb6c9c541a60dc83c2ca1a2f, type: 2}
+      propertyPath: m_TagString
+      value: Coin
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aeaa3c2ebb6c9c541a60dc83c2ca1a2f, type: 2}
   m_IsPrefabParent: 0
@@ -430,9 +451,10 @@ GameObject:
   - component: {fileID: 361752911}
   - component: {fileID: 361752910}
   - component: {fileID: 361752909}
+  - component: {fileID: 361752913}
   m_Layer: 0
   m_Name: Required Collectible Pickup (5)
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -476,7 +498,7 @@ CapsuleCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 361752908}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 2
@@ -502,6 +524,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &361752913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 361752908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 632bea3e378e1d449898ddc1b4d51555, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &396329290 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100002, guid: 7c10f1e6f6780ec4d819662bb4f3bddc, type: 3}
@@ -531,9 +564,10 @@ GameObject:
   - component: {fileID: 479163432}
   - component: {fileID: 479163431}
   - component: {fileID: 479163430}
+  - component: {fileID: 479163434}
   m_Layer: 0
   m_Name: Required Collectible Pickup (4)
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -577,7 +611,7 @@ CapsuleCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 479163429}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 2
@@ -597,12 +631,23 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 479163429}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.8, y: -0.55, z: -12.3}
+  m_LocalPosition: {x: 10.8, y: 0.33, z: -12.3}
   m_LocalScale: {x: 1, y: 0.08379301, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &479163434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 479163429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 632bea3e378e1d449898ddc1b4d51555, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &510902244 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 7c10f1e6f6780ec4d819662bb4f3bddc, type: 3}
@@ -650,9 +695,10 @@ GameObject:
   - component: {fileID: 943902412}
   - component: {fileID: 943902411}
   - component: {fileID: 943902410}
+  - component: {fileID: 943902414}
   m_Layer: 0
   m_Name: Required Collectible Pickup (2)
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -696,7 +742,7 @@ CapsuleCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 943902409}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 2
@@ -722,6 +768,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &943902414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 943902409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 632bea3e378e1d449898ddc1b4d51555, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1175491085 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100004, guid: 7c10f1e6f6780ec4d819662bb4f3bddc, type: 3}
@@ -831,9 +888,10 @@ GameObject:
   - component: {fileID: 1386894679}
   - component: {fileID: 1386894678}
   - component: {fileID: 1386894677}
+  - component: {fileID: 1386894681}
   m_Layer: 0
   m_Name: Required Collectible Pickup (6)
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -877,7 +935,7 @@ CapsuleCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1386894676}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 2
@@ -903,6 +961,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1386894681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1386894676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 632bea3e378e1d449898ddc1b4d51555, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1400030069
 GameObject:
   m_ObjectHideFlags: 0
@@ -914,9 +983,10 @@ GameObject:
   - component: {fileID: 1400030072}
   - component: {fileID: 1400030071}
   - component: {fileID: 1400030070}
+  - component: {fileID: 1400030074}
   m_Layer: 0
   m_Name: Required Collectible Pickup (1)
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -960,7 +1030,7 @@ CapsuleCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1400030069}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 2
@@ -986,6 +1056,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1400030074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1400030069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 632bea3e378e1d449898ddc1b4d51555, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1475401168 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100010, guid: 7c10f1e6f6780ec4d819662bb4f3bddc, type: 3}
@@ -1004,6 +1085,22 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300012, guid: 7c10f1e6f6780ec4d819662bb4f3bddc, type: 3}
+--- !u!1 &1600655415 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1888712775587104, guid: aeaa3c2ebb6c9c541a60dc83c2ca1a2f,
+    type: 2}
+  m_PrefabInternal: {fileID: 352052789}
+--- !u!114 &1600655416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1600655415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 632bea3e378e1d449898ddc1b4d51555, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1638435807 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100018, guid: 7c10f1e6f6780ec4d819662bb4f3bddc, type: 3}
@@ -1602,6 +1699,10 @@ Prefab:
       value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 100016, guid: 7c10f1e6f6780ec4d819662bb4f3bddc, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 7c10f1e6f6780ec4d819662bb4f3bddc, type: 3}
       propertyPath: m_TagString
       value: Wall
       objectReference: {fileID: 0}
