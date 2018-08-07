@@ -129,6 +129,7 @@ MonoBehaviour:
   Gravity: 9.81
   JumpSpeed: 150
   CanRun: 1
+  GameOverI: {fileID: 1772382089450962, guid: 45613de21be0b0e45adef9738ce13936, type: 2}
 --- !u!114 &114606175420312302
 MonoBehaviour:
   m_ObjectHideFlags: 1

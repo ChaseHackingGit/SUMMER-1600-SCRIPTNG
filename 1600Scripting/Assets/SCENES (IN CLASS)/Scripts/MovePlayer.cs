@@ -12,6 +12,7 @@ public class MovePlayer : MonoBehaviour {
 	public float Gravity = 9.81f;
 	public float JumpSpeed = 10.0f;
 	public bool CanRun = true;
+	public GameObject GameOverI;
 
 	// Use this for initialization
 	void Start () 
@@ -58,6 +59,7 @@ public class MovePlayer : MonoBehaviour {
 	{
 		if (other.gameObject.tag == "Enemy") {
 			Debug.Log ("GAME OVER");
+			Instantiate (GameOverI, transform.position, Quaternion.identity);
 		}
 	}
 }
