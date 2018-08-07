@@ -15,7 +15,7 @@ public class MovePlayer : MonoBehaviour {
 	public GameObject GameOverI;
 	public GameObject ScoreBarI;
 	public GameObject YouWinI;
-	public bool isdead = false;
+	private bool isdead = false;
 
 	// Use this for initialization
 	void Start () 
