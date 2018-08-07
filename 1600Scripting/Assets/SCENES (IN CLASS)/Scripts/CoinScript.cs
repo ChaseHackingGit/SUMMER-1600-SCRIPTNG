@@ -9,10 +9,14 @@ public class CoinScript : MonoBehaviour {
 
 	void Update (){
 	}
-
+	private void DestroyObject()
+	{
+		Destroy (gameObject);
+	}
 	private void OnTriggerEnter(Collider other)
 	{
 		if (other.gameObject.tag == "Randal") {
+			Debug.Log ("Randal hit the coin");
 			Invoke ("DestroyObject", 0);
 		}
 	}
