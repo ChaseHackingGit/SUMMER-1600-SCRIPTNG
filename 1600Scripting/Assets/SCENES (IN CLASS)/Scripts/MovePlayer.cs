@@ -13,12 +13,15 @@ public class MovePlayer : MonoBehaviour {
 	public float JumpSpeed = 10.0f;
 	public bool CanRun = true;
 	public GameObject GameOverI;
+	public GameObject ScoreBarI;
+	public GameObject YouWinI;
 	public bool isdead = false;
 
 	// Use this for initialization
 	void Start () 
 	{
 		controller = GetComponent<CharacterController> ();
+		Instantiate (ScoreBarI);
 	}
 	
 	// Update is called once per frame
@@ -67,6 +70,18 @@ public class MovePlayer : MonoBehaviour {
 			Instantiate (GameOverI);
 			//Invoke ("DestroyObject", 0);
 			isdead = true;
+		}
+		if (other.gameObject.tag == "Coin") {
+			Debug.Log ("Randal hit the coin");
+			Destroy (other.gameObject);
+			UIScoreScript scorescript = ScoreBarI.GetComponentInChildren< UIScoreScript> ();
+			scorescript.SetValue (scorescript.GetValue() + 1.0f / 7.0f);//there are 7 coins
+
+			if ((isdead == false) && (scorescript.GetValue() >= 1.00f)) {
+				Debug.Log ("YOU WIN");
+				Instantiate (YouWinI);
+				isdead = true;
+			}
 		}
 	}
 }

@@ -426,7 +426,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4310493732545794, guid: 81d10c99e98a15c4193b66a522b18941, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1333980014971256, guid: 81d10c99e98a15c4193b66a522b18941, type: 2}
       propertyPath: m_Name
@@ -766,7 +766,7 @@ Transform:
   m_LocalScale: {x: 1, y: 0.08379301, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &943902414
 MonoBehaviour:
@@ -1054,7 +1054,7 @@ Transform:
   m_LocalScale: {x: 1, y: 0.08379301, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1400030074
 MonoBehaviour:
@@ -1240,6 +1240,18 @@ Prefab:
       propertyPath: GameOverI
       value: 
       objectReference: {fileID: 1139774185023388, guid: 6c2fbe4713db0284c9495f652bae723e,
+        type: 2}
+    - target: {fileID: 114238241076613552, guid: 11cfd6da96a6f0d4eaf861f51b9f3c19,
+        type: 2}
+      propertyPath: ScoreBarI
+      value: 
+      objectReference: {fileID: 1015326561563980, guid: 581f9b139e89dd9478c7c4eaa6eb9c2a,
+        type: 2}
+    - target: {fileID: 114238241076613552, guid: 11cfd6da96a6f0d4eaf861f51b9f3c19,
+        type: 2}
+      propertyPath: YouWinI
+      value: 
+      objectReference: {fileID: 1011167585236736, guid: 46116ab175689cf4c862ab46b2f46214,
         type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11cfd6da96a6f0d4eaf861f51b9f3c19, type: 2}

@@ -15,9 +15,6 @@ public class CoinScript : MonoBehaviour {
 	}
 	private void OnTriggerEnter(Collider other)
 	{
-		if (other.gameObject.tag == "Randal") {
-			Debug.Log ("Randal hit the coin");
-			Invoke ("DestroyObject", 0);
-		}
+		
 	}
 }
