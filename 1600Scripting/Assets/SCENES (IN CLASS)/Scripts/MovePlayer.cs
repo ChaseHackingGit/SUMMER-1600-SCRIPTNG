@@ -13,6 +13,7 @@ public class MovePlayer : MonoBehaviour {
 	public float JumpSpeed = 10.0f;
 	public bool CanRun = true;
 	public GameObject GameOverI;
+	public bool isdead = false;
 
 	// Use this for initialization
 	void Start () 
@@ -35,7 +36,7 @@ public class MovePlayer : MonoBehaviour {
 		newPosition.x = 0.0f;
 		newPosition.z = 0.0f;
 
-		if (CanRun)
+		if (CanRun && (isdead ==false))
 		{
 			if (Input.GetKey (KeyCode.LeftArrow)) {
 				newPosition.x = -Speed;
@@ -54,13 +55,18 @@ public class MovePlayer : MonoBehaviour {
 		controller.Move (newPosition * Time.deltaTime);
 	}
 
-
+	private void DestroyObject()
+	{
+		Destroy (gameObject);
+	}
 	private void OnTriggerEnter(Collider other)
 	{
-		if (other.gameObject.tag == "Enemy") {
+		if ((isdead ==false) && (other.gameObject.tag == "Enemy")) {
 			Debug.Log ("GAME OVER");
 			//Instantiate (GameOverI, transform.position, Quaternion.identity);
 			Instantiate (GameOverI);
+			//Invoke ("DestroyObject", 0);
+			isdead = true;
 		}
 	}
 }
