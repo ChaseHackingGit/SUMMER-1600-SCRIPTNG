@@ -32,8 +32,8 @@ public class Ammo : MonoBehaviour {
 		if (other.gameObject.tag == "Wall") {
 			Invoke ("DestroyObject", 0);
 		}
-			//ProjectileSpeed = ProjectileUpgrade;
-			//Debug.Log ("check2", ProjectileSpeed);
-			//Projectile.AddForce (0, 0, ProjectileSpeed.Value);
+			ProjectileSpeed = ProjectileUpgrade;
+			Debug.Log ("check2", ProjectileSpeed);
+			Projectile.AddForce (0, 0, ProjectileSpeed.Value);
 	}
 }
