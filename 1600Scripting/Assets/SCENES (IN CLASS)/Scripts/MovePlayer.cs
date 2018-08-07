@@ -59,7 +59,8 @@ public class MovePlayer : MonoBehaviour {
 	{
 		if (other.gameObject.tag == "Enemy") {
 			Debug.Log ("GAME OVER");
-			Instantiate (GameOverI, transform.position, Quaternion.identity);
+			//Instantiate (GameOverI, transform.position, Quaternion.identity);
+			Instantiate (GameOverI);
 		}
 	}
 }
