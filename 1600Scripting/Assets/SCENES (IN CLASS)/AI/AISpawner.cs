@@ -19,6 +19,7 @@ public class AISpawner : MonoBehaviour
 	public Level CurrentLevel;
 	private int aiCount;
 	private AI_TYPE CurrentAiType;
+	public AICollection liveAI;
 
 	private void Start()
 	{
@@ -50,6 +51,8 @@ public class AISpawner : MonoBehaviour
 			}
 
 			newAI.GetComponent<AIMovement> ().Destination = Destination;
+			liveAI.Add (newAI);
+
 			aiCount--;
 
 			yield return new WaitForSeconds (CurrentLevel.Time);

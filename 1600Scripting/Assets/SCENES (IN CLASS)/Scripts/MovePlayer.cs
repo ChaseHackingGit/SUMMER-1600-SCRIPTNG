@@ -16,6 +16,7 @@ public class MovePlayer : MonoBehaviour {
 	public GameObject ScoreBarI;
 	public GameObject YouWinI;
 	private bool isdead = false;
+	public AISpawner AISpawnerRef;
 
 	// Use this for initialization
 	void Start () 
@@ -75,13 +76,17 @@ public class MovePlayer : MonoBehaviour {
 			Debug.Log ("Randal hit the coin");
 			Destroy (other.gameObject);
 			UIScoreScript scorescript = ScoreBarI.GetComponentInChildren< UIScoreScript> ();
-			scorescript.SetValue (scorescript.GetValue() + 1.0f / 7.0f);//there are 7 coins
+			scorescript.SetValue (scorescript.GetValue () + 1.0f / 7.0f);//there are 7 coins
 
-			if ((isdead == false) && (scorescript.GetValue() >= 1.00f)) {
+			if ((isdead == false) && (scorescript.GetValue () >= 1.00f)) {
 				Debug.Log ("YOU WIN");
 				Instantiate (YouWinI);
 				isdead = true;
 			}
+		} else if (other.gameObject.tag == "PowderKeg") {
+			Debug.Log ("BOOM");
+			AISpawnerRef.liveAI.DestroyAll ();
+			Destroy (other.gameObject);
 		}
 	}
 }
