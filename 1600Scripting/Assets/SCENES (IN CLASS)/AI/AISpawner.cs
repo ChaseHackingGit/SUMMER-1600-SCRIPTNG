@@ -2,9 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-// Dummy commit - Had a major issue with Git and had to force a bunch
-// Just making a dummy change here to indicate that.
-
 public class AISpawner : MonoBehaviour 
 {
 
