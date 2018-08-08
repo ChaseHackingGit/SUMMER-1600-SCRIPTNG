@@ -369,7 +369,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 320209704}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.45, y: 0, z: -3.12}
+  m_LocalPosition: {x: 0, y: 0, z: 3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -386,7 +386,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36993068d7076c74eb5133683ed01e90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Ai: {fileID: 1210913919855680, guid: 7e1c0a0a68695c543870a866af82aefe, type: 2}
+  AiPawn: {fileID: 1210913919855680, guid: 7e1c0a0a68695c543870a866af82aefe, type: 2}
+  AiTrickster: {fileID: 1004641566087246, guid: b48161d67404efe4199738dca2960b6d,
+    type: 2}
+  AiBrute: {fileID: 1381912204531946, guid: 2108a4aaf678bf74eb9702b3510d1f37, type: 2}
   Destination: {fileID: 1981868691}
   CurrentLevel: {fileID: 11400000, guid: 4379b5792eadf2f48a70c47799c99e62, type: 2}
 --- !u!1001 &352052789
