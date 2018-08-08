@@ -11,5 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 470a42237f78b1c41bf671ea3af25eb0, type: 3}
   m_Name: Standard speed AI
   m_EditorClassIdentifier: 
-  Speed: 5
+  Speed: 10
   AngularSpeed: 360
