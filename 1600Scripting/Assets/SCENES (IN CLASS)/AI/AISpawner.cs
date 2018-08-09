@@ -29,29 +29,37 @@ public class AISpawner : MonoBehaviour
 		StartCoroutine (StartSpawn ());
 	}
 
+
 	private IEnumerator StartSpawn ()
 	{
 		while (aiCount > 0)
 		{
-			GameObject newAI = null;
+			// Whenever aiCount is a multiple of 5, doulble spawn event!
+			//     aiCount : 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
+			// aiCount % 5 : 1 2 3 4 0 1 2 3 4  0  1  2  3  4  0  1
+			int num2spawn = ((aiCount % 5) != 0) ? 1 : 2; 
+				
+			for (int i = 0; i < num2spawn; i++) {
+				GameObject newAI = null;
 
-			switch (CurrentAiType) {
-			case AI_TYPE.AI_PAWN:
-				newAI = Instantiate (AiPawn);
-				CurrentAiType = AI_TYPE.AI_TRICKSTER;
-				break;
-			case AI_TYPE.AI_TRICKSTER:
-				newAI = Instantiate (AiTrickster);
-				CurrentAiType = AI_TYPE.AI_BRUTE;
-				break;
-			case AI_TYPE.AI_BRUTE:
-				newAI = Instantiate (AiBrute);
-				CurrentAiType = AI_TYPE.AI_PAWN;
-				break;
+				switch (CurrentAiType) {
+				case AI_TYPE.AI_PAWN:
+					newAI = Instantiate (AiPawn);
+					CurrentAiType = AI_TYPE.AI_TRICKSTER;
+					break;
+				case AI_TYPE.AI_TRICKSTER:
+					newAI = Instantiate (AiTrickster);
+					CurrentAiType = AI_TYPE.AI_BRUTE;
+					break;
+				case AI_TYPE.AI_BRUTE:
+					newAI = Instantiate (AiBrute);
+					CurrentAiType = AI_TYPE.AI_PAWN;
+					break;
+				}
+
+				newAI.GetComponent<AIMovement> ().Destination = Destination;
+				liveAI.Add (newAI);
 			}
-
-			newAI.GetComponent<AIMovement> ().Destination = Destination;
-			liveAI.Add (newAI);
 
 			aiCount--;
 
