@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
+
 public class BounceOnClick : MonoBehaviour
 {
 
@@ -21,4 +22,11 @@ public class BounceOnClick : MonoBehaviour
 		{
 				anims.SetTrigger("CanBounce");
 		}
+
+	public void EndAnims()
+	{
+		GetComponent<MeshRenderer> ().enabled = false;
+		GetComponent<SphereCollider>().enabled = false;
+		GetComponent<ParticleSystem> ().Emit (20);
 	}
+}
