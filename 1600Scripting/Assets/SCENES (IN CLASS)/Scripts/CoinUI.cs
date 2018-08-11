@@ -2,15 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CoinUI : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+
+public class CoinUI : MonoBehaviour
+{
+	public IntData CoinCollection;
+	public Texture CoinText;
+
+	private void Update()
+	{
+		CoinText.text = CoinCollection.Value.ToString ();
 	}
 }
+
