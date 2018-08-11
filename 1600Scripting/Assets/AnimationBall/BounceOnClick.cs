@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-
 public class BounceOnClick : MonoBehaviour
 {
 
-		private Animator anims;
+	private Animator anims;
+	public IntData CoinCollection;
+
 		private void Start()
 		{
-			anims = GetComponent<Animator();
+			anims = GetComponent<Animator>();
 		}
 
 		private void OnMouseDown()
@@ -28,5 +29,6 @@ public class BounceOnClick : MonoBehaviour
 		GetComponent<MeshRenderer> ().enabled = false;
 		GetComponent<SphereCollider>().enabled = false;
 		GetComponent<ParticleSystem> ().Emit (20);
+		CoinCollection.Value++;
 	}
 }
